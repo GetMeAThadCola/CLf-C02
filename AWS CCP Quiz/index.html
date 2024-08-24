@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hunter's AWS CCP Quiz</title>
+    <!-- Import Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 20px;
+            background: url('background.gif') no-repeat center center fixed; 
+            background-size: cover;
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px 2px black;
+            font-weight: bolder;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .choices {
+            list-style-type: none;
+            padding: 0;
+        }
+        .choices li {
+            margin-bottom: 10px;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #a71b92;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #db0e9a;
+        }
+        .correct {
+            color: limegreen;
+        }
+        .incorrect {
+            color: crimson;
+        }
+        .explanation {
+            font-style: italic;
+            margin-top: 10px;
+        }
+        .result {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hunter's AWS CCP Quiz</h1>
+    <div id="quiz"></div>
+    <button id="submitBtn" class="btn" onclick="submitAnswer()">Submit Answer</button>
+    <div id="result"></div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
+
